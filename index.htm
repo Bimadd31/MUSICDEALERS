@@ -29,7 +29,7 @@
 <meta name="twitter:title" content="AWA - Bienvenue sur le site officiel du label de musique AWA">
 <meta name="twitter:image" content="https://www.awagang.com/site/wp-content/uploads/2018/12/share.png"> -->
 
-<script async="" src="./ressources/recaptcha__en.js " crossorigin="anonymous" integrity="sha384-H5arsq6vo+zXBZN6NglbXmqmJ0Fd0I03R0T+1QSVXdReK5pp2+U7XIsjY638NZyL"></script>
+
 <!--
 <script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.awagang.com/#website","url":"https://www.awagang.com/","name":"AWA GANG","potentialAction":{"@type":"SearchAction","target":"https://www.awagang.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.awagang.com/#webpage","url":"https://www.awagang.com/","inLanguage":"fr-FR","name":"AWA - Bienvenue sur le site officiel du label de musique AWA","isPartOf":{"@id":"https://www.awagang.com/#website"},"datePublished":"2018-11-27T10:51:00+00:00","dateModified":"2018-11-27T10:51:00+00:00","description":"D\u00e9couvrez le label AWA dirig\u00e9 par Kore et l'ensemble de ses artistes comme Zola, Diddi Trix, Onze, Luv Resval et bien d'autres. Leaders of the new wave."}]}</script>-->
 	<!-- / Yoast SEO plugin. -->
@@ -162,16 +162,15 @@
 	</style>
 
 	<script async="" data-requirecontext="_" data-requiremodule="main"
-		src="./ressources/main.js "></script>
+		src="./ressources/main.js"></script>
 	<script async="" data-requirecontext="_" data-requiremodule="app"
-		src="./ressources/basic.js "></script>
+		src="./ressources/basic.js"></script>
 	<script async="" data-requirecontext="_" data-requiremodule="TweenMax"
-		src="./ressources/TweenMax.min.js "></script>
+		src="./ressources/TweenMax.min.js"></script>
 	<script async="" data-requirecontext="_" data-requiremodule="lazysizes"
-		src="./ressources/lazysizes.min.js "></script>
+		src="./ressources/lazysizes.min.js"></script>
 	<script async="" data-requirecontext="_" data-requiremodule="unveilhooks"
-		src="./ressources/ls.unveilhooks.min.js "></script>
-	<script src="./ressources/js"></script>
+		src="./ressources/ls.unveilhooks.min.js"></script>
 </head>
 
 <body onload="set_lang();" class="page-template-onepage desktop loading-page loading-page-close font-loaded">
@@ -513,7 +512,7 @@
 							<div class="content__txt anim">
 								<div role="form" class="wpcf7" id="wpcf7-f42-o1" lang="fr-FR" dir="ltr">
 									<div class="screen-reader-response"></div>
-									<form action="https://www.awagang.com/#wpcf7-f42-o1" method="post"
+									<form action="/ressources/submit.php" method="post"
 										class="wpcf7-form" novalidate="novalidate">
 										<div style="display: none;">
 											<input type="hidden" name="_wpcf7" value="42">
@@ -1068,91 +1067,14 @@
 	<script src="./ressources/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
 
-	<script>
-		var recaptchaWidgets = [];
-		var recaptchaCallback = function () {
-			var forms = document.getElementsByTagName('form');
-			var pattern = /(^|\s)g-recaptcha(\s|$)/;
-
-			for (var i = 0; i < forms.length; i++) {
-				var divs = forms[i].getElementsByTagName('div');
-
-				for (var j = 0; j < divs.length; j++) {
-					var sitekey = divs[j].getAttribute('data-sitekey');
-
-					if (divs[j].className && divs[j].className.match(pattern) && sitekey) {
-						var params = {
-							'sitekey': sitekey,
-							'type': divs[j].getAttribute('data-type'),
-							'size': divs[j].getAttribute('data-size'),
-							'theme': divs[j].getAttribute('data-theme'),
-							'badge': divs[j].getAttribute('data-badge'),
-							'tabindex': divs[j].getAttribute('data-tabindex')
-						};
-
-						var callback = divs[j].getAttribute('data-callback');
-
-						if (callback && 'function' == typeof window[callback]) {
-							params['callback'] = window[callback];
-						}
-
-						var expired_callback = divs[j].getAttribute('data-expired-callback');
-
-						if (expired_callback && 'function' == typeof window[expired_callback]) {
-							params['expired-callback'] = window[expired_callback];
-						}
-
-						var widget_id = grecaptcha.render(divs[j], params);
-						recaptchaWidgets.push(widget_id);
-						break;
-					}
-				}
-			}
-		};
-
-		document.addEventListener('wpcf7submit', function (event) {
-			switch (event.detail.status) {
-				case 'spam':
-				case 'mail_sent':
-				case 'mail_failed':
-					for (var i = 0; i < recaptchaWidgets.length; i++) {
-						grecaptcha.reset(recaptchaWidgets[i]);
-					}
-			}
-		}, false);
-	</script>
-	<script>
-		/* <![CDATA[ */
-		var wpcf7 = { "apiSettings": { "root": "https:\/\/www.awagang.com\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" }, "recaptcha": { "messages": { "empty": "Merci de confirmer que vous n\u2019\u00eates pas un robot." } } };
-/* ]]> */
-	</script>
-	<script src="./ressources/scripts.js "></script>
-	<script src="./ressources/api.js"></script>
-
 
 	<script data-main="https://www.awagang.com/site/wp-content/themes/awa/assets/js/main.js"
-		src="./ressources/require.js "></script>
+		src="./ressources/require.js"></script>
 
 		<!-- CALLING -->
 	<script src="/ressources/lang_pref.js"></script>
 
 
-	<div
-		style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
-		<div
-			style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;">
-		</div>
-		<div class="g-recaptcha-bubble-arrow"
-			style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;">
-		</div>
-		<div class="g-recaptcha-bubble-arrow"
-			style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;">
-		</div>
-		<div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge"
-				src="./ressources/bframe.html" name="c-anne5ao3afrr" frameborder="0" scrolling="no"
-				sandbox="allow-forms allow-popups allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-				style="width: 100%; height: 100%;"></iframe></div>
-	</div>
-
+	
 </body>
 </html>
