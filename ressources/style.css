@@ -1630,7 +1630,7 @@ section#label .section__footer {
 
 .section__content a {
   color: #fff;
-  font-size: 8rem;
+  font-size: 6rem;
   /*line-height: 2.8rem; */
   font-weight: 700;
   position: relative;
@@ -3314,5 +3314,57 @@ General Media Queries
   }
   .prod__right a span {
     font-size: 0.8em;
+  }
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  z-index: 1000;
+  margin-left: 90%;
+  margin-bottom: 40%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+.dropdown-content a img {
+  vertical-align: middle;
+}
+@media screen and (max-width: 1000px) {
+  .dropdown {
+    margin-right: 160%;
+    margin-bottom: 120%;
   }
 }
