@@ -2599,6 +2599,7 @@ button,
 .wpcf7-submit {
   background: #fff;
   color: #000;
+  transition: color ease-in-out 0.2s;
   padding: 10px 20px;
   display: inline-block;
   text-transform: uppercase;
@@ -2611,6 +2612,13 @@ button,
   overflow: hidden;
   border: none;
   cursor: pointer;
+}
+.wpcf7-submit {
+  font-weight: bold;
+}
+.wpcf7-submit:hover {
+  color: #c7a915;
+  transition: color ease-in-out 0.2s;
 }
 
 .btn span.icon {
