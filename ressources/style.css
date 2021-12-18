@@ -1630,7 +1630,7 @@ section#label .section__footer {
 
 .section__content a {
   color: #fff;
-  font-size: 8rem;
+  font-size: 6rem;
   /*line-height: 2.8rem; */
   font-weight: 700;
   position: relative;
@@ -2599,6 +2599,7 @@ button,
 .wpcf7-submit {
   background: #fff;
   color: #000;
+  transition: color ease-in-out 0.2s;
   padding: 10px 20px;
   display: inline-block;
   text-transform: uppercase;
@@ -2611,6 +2612,13 @@ button,
   overflow: hidden;
   border: none;
   cursor: pointer;
+}
+.wpcf7-submit {
+  font-weight: bold;
+}
+.wpcf7-submit:hover {
+  color: #c7a915;
+  transition: color ease-in-out 0.2s;
 }
 
 .btn span.icon {
@@ -3186,74 +3194,6 @@ footer .footer-nav-list a {
 }
 
 /*--------------------------------------------------------------
-Tarteaucitron
---------------------------------------------------------------*/
-
-#tarteaucitronAlertBig {
-  background: #fff !important;
-  color: #000 !important;
-  position: fixed !important;
-  z-index: 99999;
-  bottom: 40px;
-  right: 20px;
-
-  font-size: 14px !important;
-  left: auto !important;
-  padding: 15px !important;
-  text-align: left !important;
-  width: 450px !important;
-}
-
-#tarteaucitronAlertBig #tarteaucitronDisclaimerAlert,
-#tarteaucitronAlertBig #tarteaucitronDisclaimerAlert b {
-  font-size: 14px !important;
-  color: #000 !important;
-  font-family: "Texta Alt", Helvetica, Arial, sans-serif !important;
-  font-weight: 400 !important;
-  display: block;
-  margin-bottom: 5px;
-  padding: 0px 10px !important;
-}
-
-#tarteaucitronAlertBig #tarteaucitronPersonalize {
-  background: #000 !important;
-  color: #fff !important;
-  cursor: pointer !important;
-  display: inline-block !important;
-  font-size: 15px !important;
-  padding: 5px 10px !important;
-  text-decoration: none !important;
-  margin-left: 0 !important;
-}
-#tarteaucitronAlertBig #tarteaucitronCloseAlert {
-  background: #666 !important;
-  color: #fff !important;
-  cursor: pointer !important;
-  display: inline-block !important;
-  font-size: 15px !important;
-  padding: 5px 10px !important;
-  text-decoration: none !important;
-  margin-left: 0 !important;
-}
-
-@media screen and (max-width: 1000px) {
-  #tarteaucitronAlertBig {
-    background: #fff !important;
-    color: #000 !important;
-    position: fixed !important;
-    z-index: 99999;
-    bottom: 0;
-    right: auto !important;
-
-    font-size: 14px !important;
-    left: auto !important;
-    padding: 15px 0 !important;
-    text-align: center !important;
-    width: 100% !important;
-  }
-}
-
-/*--------------------------------------------------------------
 General Media Queries
 --------------------------------------------------------------*/
 
@@ -3382,5 +3322,57 @@ General Media Queries
   }
   .prod__right a span {
     font-size: 0.8em;
+  }
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  z-index: 1000;
+  margin-left: 90%;
+  margin-bottom: 40%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+.dropdown-content a img {
+  vertical-align: middle;
+}
+@media screen and (max-width: 1000px) {
+  .dropdown {
+    margin-right: 160%;
+    margin-bottom: 120%;
   }
 }
