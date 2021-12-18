@@ -15,7 +15,7 @@
 		else if (localStorage.getItem("lang_pref") === "EN") {
 			window.location.href = "#EN";
 		} else {
-			window.location.href = "#EN";
+			window.location.href = "#FR";
 		}
 		detect_lang_change();
 	}
@@ -23,10 +23,10 @@
 	var dataReload = document.querySelectorAll("[data-reload]");
 	var language = {
 		fr: {
-			visionPage: "PUT FRENCH VERSION TEXT"
+			visionPage: "Ce nom émane de notre mission laquelle monter une structure qui touche dans plusieurs styles musicaux afin de faire avancer toute la culture urbaine marocaine, comme on croit totalement que cet aboutissement serait collectif ou ne serait jamais, on va suivre le chemin, que les artistes marocains ont déjà créé, à savoir exporter notre culture musicale au-delà des frontières et de même contribuer à instaurer une forte industrie musicale. En même temps, on va bâtir notre propre chemin celui de ramener des nouvelles sonorités d'une part, et d'autre part, investir dans d'autres domaines lesquelles vont aussi créer un impact dans la musique."
 				},
 		en: {
-			visionPage: "PUT ENGLISH VERSION TEXT"
+			visionPage: "This name emanates from our mission to set up a structure that touches on several musical styles in order to advance all of Moroccan urban culture, as we totally believe that this outcome would be collective or never would be, we will follow the path, that Moroccan artists have already created, namely exporting our musical culture beyond borders and also helping to establish a strong music industry. At the same time, we are going to build our own path, that of bringing back new sounds on the one hand, and on the other hand, investing in other areas which will also have an impact in music."
 		}
 	};
 
