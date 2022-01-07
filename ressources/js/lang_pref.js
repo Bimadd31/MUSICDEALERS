@@ -23,10 +23,13 @@
 	var dataReload = document.querySelectorAll("[data-reload]");
 	var language = {
 		fr: {
-			visionPage: "Ce nom émane de notre mission laquelle monter une structure qui touche dans plusieurs styles musicaux afin de faire avancer toute la culture urbaine marocaine, comme on croit totalement que cet aboutissement serait collectif ou ne serait jamais, on va suivre le chemin, que les artistes marocains ont déjà créé, à savoir exporter notre culture musicale au-delà des frontières et de même contribuer à instaurer une forte industrie musicale. En même temps, on va bâtir notre propre chemin celui de ramener des nouvelles sonorités d'une part, et d'autre part, investir dans d'autres domaines lesquelles vont aussi créer un impact dans la musique."
+			visionPage: "Music Dealers croit que le succès de la culture urbaine marocaine serait collectif ou ne serait jamais. Produire des artistes en donnant une propre identité musicale est notre mission, qui fait la paire avec notre vision dont donner la visibilité à plusieurs genres musicaux et imposer nos sonorités au-delà des frontières. Aidez à montrer au monde la puissance de notre culture et le potentiel de notre mouvement, en équipe.",
+			labelIntro : "Rapper plus pour gagner plus. Nous sommes la voix de la rue, le son d'une fraternité, un label où la fidélité aux racines passe avant tout. Nos artistes sont plus que de simples artistes, ce sont des visionnaires, des innovateurs qui partagent leurs histoires et leurs ambiances à travers la musique qu'ils créent, et notre travail en tant que label est de s'assurer que vous, le public, obtenez l'expérience complète et s'intégrer dans notre univers. Les histoires, que nous racontons, méritent d'être bien entendues, et 7 est notre conférencier."
 				},
 		en: {
-			visionPage: "This name emanates from our mission to set up a structure that touches on several musical styles in order to advance all of Moroccan urban culture, as we totally believe that this outcome would be collective or never would be, we will follow the path, that Moroccan artists have already created, namely exporting our musical culture beyond borders and also helping to establish a strong music industry. At the same time, we are going to build our own path, that of bringing back new sounds on the one hand, and on the other hand, investing in other areas which will also have an impact in music."
+			visionPage: "we here at music dealers believe that the success of the Moroccan urban culture depends on collectives. we help push artists from all genres, with different visions and ideas, to help impose the marginalized and break the sonic boundaries that hold them in place. help show the world the power of our culture and the potential of our movement, as a team.",
+
+			labelIntro : "Rap more to earn more. We are the voice of the street, the sound of a brotherhood, a label where loyalty to roots comes first. Our artists are more than just artists, they are visionaries, innovators who share their stories and moods through the music they create, and our job as a label is to make sure that you, the audience, get the full experience and fit into our universe. The stories we tell deserve to be heard, and 7 is our speaker."
 		}
 	};
 
@@ -39,6 +42,7 @@
 				set_fr();
 				document.getElementById("lang").setAttribute("value","fr-FR");
 				visionInfo.textContent = language.fr.visionPage
+				labelIntro.textContent = language.fr.labelIntro
 				document.getElementById("nom").placeholder = "Nom";
 				document.getElementById("email").placeholder = "Adresse Email";
 				document.getElementById("subject").placeholder = "Sujet";
@@ -52,6 +56,7 @@
 				set_en();
 				document.getElementById("lang").setAttribute("value","en-US");
 				visionInfo.textContent = language.en.visionPage;
+				labelIntro.textContent = language.en.labelIntro
 				document.getElementById("nom").placeholder = "Name";
 				document.getElementById("email").placeholder = "E-mail";
 				document.getElementById("subject").placeholder = "Subject";
