@@ -3066,7 +3066,9 @@ ul.main-nav-list li:last-child {
 
 @media screen and (max-width: 1000px) {
   section#home h1 {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    font-size: 2rem;
   }
   #main-nav- {
     width: 100%;
@@ -3316,11 +3318,17 @@ General Media Queries
   .menu-buttons {
     transform: scale(0.9);
   }
+  .logo {
+    width: 25%;
+  }
 }
 @media screen and (max-width: 700px) {
   .ul-container {
     transform: scale(0.8);
     gap: 0px;
+  }
+  .logo {
+    width: 40%;
   }
 }
 @media screen and (min-width: 500px) {
@@ -3373,7 +3381,6 @@ General Media Queries
 
   min-width: 80px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 .dropdown-content a {
@@ -3399,6 +3406,7 @@ General Media Queries
   z-index: 55;
   display: block;
   top: 10rem;
+  z-index: 1000;
   left: 10rem;
 }
 @media screen and (max-width: 600px) {
