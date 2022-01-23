@@ -8,7 +8,7 @@ $verify = json_decode(file_get_contents($url));
 
 $mailFrom = $_POST['your-email'];
 $name = $_POST['your-name'];
-$to = "musicdealers.inc@gmail.com";
+$to = "theprogameur05@gmail.com";
 $subject = $_POST['your-subject'];
 $body = $_POST['your-message'];
 $headers[] = "From: $name <$mailFrom>";
