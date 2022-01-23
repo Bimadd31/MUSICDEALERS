@@ -1,16 +1,14 @@
 <?php
-// (A) PROCESS STATUS
+
 $error = "";
 
-// (B) VERIFY CAPTCHA
-// 6Leg6YUdAAAAANE_d0DyY35FZgz9JdDgJtp_tcOs
-$secret = "6Leg6YUdAAAAANE_d0DyY35FZgz9JdDgJtp_tcOs"; // CHANGE THIS TO YOUR OWN!
+$secret = "6Leg6YUdAAAAANE_d0DyY35FZgz9JdDgJtp_tcOs";
 $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=" . $_POST["g-recaptcha-response"];
 $verify = json_decode(file_get_contents($url));
 
 $mailFrom = $_POST['your-email'];
 $name = $_POST['your-name'];
-$to = "Papercut@user.com"; // ! CHANGE THIS TO YOUR OWN !
+$to = "musicdealers.inc@gmail.com";
 $subject = $_POST['your-subject'];
 $body = $_POST['your-message'];
 $headers[] = "From: $name <$mailFrom>";
