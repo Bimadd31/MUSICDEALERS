@@ -79,9 +79,10 @@
 			detect_lang_change();
 
 
+		
+			
 						// CONTACT FORM ERRORS AND LANGUAGE PREFERENCES AND BUTTON ACTION
 
- 		
 							var recaptcha_response = '';
 							
 							function submitUserForm() {
@@ -95,7 +96,8 @@
 									}
 
 									return false;
-								}
+								} 
+
 								if (document.getElementById("lang").getAttribute("value") === "en-US") {
 
 									document.getElementById("submit_btn").value = "Sent !";
