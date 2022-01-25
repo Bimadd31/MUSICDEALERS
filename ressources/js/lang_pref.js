@@ -78,8 +78,7 @@
 }
 			detect_lang_change();
 
-
-		
+				
 			
 						// CONTACT FORM ERRORS AND LANGUAGE PREFERENCES AND BUTTON ACTION
 
@@ -97,7 +96,7 @@
 
 									return false;
 								} 
-
+								
 								if (document.getElementById("lang").getAttribute("value") === "en-US") {
 
 									document.getElementById("submit_btn").value = "Sent !";
@@ -123,6 +122,7 @@
 
 								setTimeout(function () {
 									document.getElementById("contactForm").reset();
+									document.getElementById('recaptcha').removeAttribute('disabled');
 									grecaptcha.reset();
 								}, 2000);
 								return true;
