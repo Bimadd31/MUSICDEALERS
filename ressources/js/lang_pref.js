@@ -128,7 +128,7 @@
 								return true;
 							}
 
-							// function verifyCaptcha(token) {
-							// 	recaptcha_response = token;
-							// 	document.getElementById('response-output').innerHTML = '';
-							// }
+							function verifyCaptcha(token) {
+								recaptcha_response = token;
+								document.getElementById('response-output').innerHTML = '';
+							}
