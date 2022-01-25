@@ -47,8 +47,8 @@
 				document.getElementById("lang").setAttribute("value","fr-FR");
 				visionInfo.textContent = language.fr.visionPage;
 				labelIntro.textContent = language.fr.labelIntro;
-				shop_title.textContent = language.fr.shop;
-				shop_desc.textContent = language.fr.shop_desc;
+				document.getElementById("shop_title").textContent = language.fr.shop;
+				document.getElementById("shop_desc").textContent = language.fr.shop_desc;
 				document.getElementById("nom").placeholder = "Nom";
 				document.getElementById("email").placeholder = "Adresse Email";
 				document.getElementById("subject").placeholder = "Sujet";
@@ -63,8 +63,8 @@
 				document.getElementById("lang").setAttribute("value","en-US");
 				visionInfo.textContent = language.en.visionPage;
 				labelIntro.textContent = language.en.labelIntro;
-				shop_title.textContent = language.en.shop;
-				shop_desc.textContent = language.en.shop_desc;
+				document.getElementById("shop_title").textContent = language.en.shop;
+				document.getElementById("shop_desc").textContent = language.en.shop_desc;
 				document.getElementById("nom").placeholder = "Name";
 				document.getElementById("email").placeholder = "E-mail";
 				document.getElementById("subject").placeholder = "Subject";
