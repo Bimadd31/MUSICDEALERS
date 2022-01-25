@@ -17,6 +17,7 @@
 	<meta property="og:locale" content="fr_FR,en_US">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="MUSIC DEALERS - Bienvenue sur le site officiel du label de musique MUSIC DEALERS">
+	<meta name="keywords" content="musicdealers,musicdealersgroup,7dahustlers,DaHustlers,txkrecords,label,morocco,rap,studio,music,musiclabel,raplabel,rocklabel,pweepa,R2D,grayward,lbad" />
 	<meta property="og:description" content="">
 	<meta property="og:url" content="https://www.musicdealersgroup.com/">
 	<meta property="og:site_name" content="MUSIC DEALERS">
@@ -247,7 +248,10 @@
 		}
 
 		section#boutique .background {
-			background: rgba(0, 0, 0, 1);
+			background-image: url("/ressources/image/shop_background.jpg");
+			background-position: left;
+			opacity: 60%;
+			/* filter: blur(5px); */
 		}
 	</style>
 	<script id="captcha_api" async defer></script>
@@ -707,10 +711,10 @@
 
 						<div class="inner">
 
-							<h1 class="anim">Boutique</h1>
+							<h1 class="anim" id="shop_title"></h1>
 
 							<div class="content__txt anim">
-								<p>bientôt disponible</p>
+								<p id="shop_desc"></p>
 							</div>
 
 						</div>

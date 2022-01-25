@@ -24,12 +24,16 @@
 	var language = {
 		fr: {
 			visionPage: "Music Dealers croit que le succès de la culture urbaine marocaine serait collectif ou ne serait jamais. Produire des artistes en donnant une propre identité musicale est notre mission, qui fait la paire avec notre vision dont donner la visibilité à plusieurs genres musicaux et imposer nos sonorités au-delà des frontières. Aidez à montrer au monde la puissance de notre culture et le potentiel de notre mouvement, en équipe.",
-			labelIntro : "Rapper plus pour gagner plus. Nous sommes la voix de la rue, le son d'une fraternité, un label où la fidélité aux racines passe avant tout. Nos artistes sont plus que de simples artistes, ce sont des visionnaires, des innovateurs qui partagent leurs histoires et leurs ambiances à travers la musique qu'ils créent, et notre travail en tant que label est de s'assurer que vous, le public, obtenez l'expérience complète et s'intégrer dans notre univers. Les histoires, que nous racontons, méritent d'être bien entendues, et 7 est notre conférencier."
+			labelIntro : "Rapper plus pour gagner plus. Nous sommes la voix de la rue, le son d'une fraternité, un label où la fidélité aux racines passe avant tout. Nos artistes sont plus que de simples artistes, ce sont des visionnaires, des innovateurs qui partagent leurs histoires et leurs ambiances à travers la musique qu'ils créent, et notre travail en tant que label est de s'assurer que vous, le public, obtenez l'expérience complète et s'intégrer dans notre univers. Les histoires, que nous racontons, méritent d'être bien entendues, et 7 est notre conférencier.",
+			shop: "Boutique",
+			shop_desc: "Bientôt disponible"
 				},
 		en: {
 			visionPage: "We here at music dealers believe that the success of the Moroccan urban culture depends on collectives. We help push artists from all genres, with different visions and ideas, to help impose the marginalized and break the sonic boundaries that hold them in place. Help show the world the power of our culture and the potential of our movement, as a team.",
 
-			labelIntro : "Rap more to earn more. We are the voice of the street, the sound of a brotherhood, a label where loyalty to roots comes first. Our artists are more than just artists, they are visionaries, innovators who share their stories and moods through the music they create, and our job as a label is to make sure that you, the audience, get the full experience and fit into our universe. The stories we tell deserve to be heard, and 7 is our speaker."
+			labelIntro : "Rap more to earn more. We are the voice of the street, the sound of a brotherhood, a label where loyalty to roots comes first. Our artists are more than just artists, they are visionaries, innovators who share their stories and moods through the music they create, and our job as a label is to make sure that you, the audience, get the full experience and fit into our universe. The stories we tell deserve to be heard, and 7 is our speaker.",
+			shop: "SHOP",
+			shop_desc: "Coming Soon"
 		}
 	};
 
@@ -41,8 +45,10 @@
 				document.getElementById("captcha_api").setAttribute("src","https://www.google.com/recaptcha/api.js?hl=fr");
 				set_fr();
 				document.getElementById("lang").setAttribute("value","fr-FR");
-				visionInfo.textContent = language.fr.visionPage
-				labelIntro.textContent = language.fr.labelIntro
+				visionInfo.textContent = language.fr.visionPage;
+				labelIntro.textContent = language.fr.labelIntro;
+				shop_title.textContent = language.fr.shop;
+				shop_desc.textContent = language.fr.shop_desc;
 				document.getElementById("nom").placeholder = "Nom";
 				document.getElementById("email").placeholder = "Adresse Email";
 				document.getElementById("subject").placeholder = "Sujet";
@@ -56,7 +62,9 @@
 				set_en();
 				document.getElementById("lang").setAttribute("value","en-US");
 				visionInfo.textContent = language.en.visionPage;
-				labelIntro.textContent = language.en.labelIntro
+				labelIntro.textContent = language.en.labelIntro;
+				shop_title.textContent = language.en.shop;
+				shop_desc.textContent = language.en.shop_desc;
 				document.getElementById("nom").placeholder = "Name";
 				document.getElementById("email").placeholder = "E-mail";
 				document.getElementById("subject").placeholder = "Subject";
