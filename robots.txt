@@ -1,0 +1,3 @@
+User-Agent : *
+Disallow: /ressources/
+Sitemap: https://www.musicdealersgroup.com/sitemap.xml
